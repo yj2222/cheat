@@ -33,6 +33,19 @@ $(function(){
     return false;
   });
   // ScrollReveal
+  let thumbnalImg = $('ul.thumbnail img');
+  for(let i = 0; i < thumbnalImg.length; i++){
+    console.log(thumbnalImg[0]);
+    ScrollReveal().reveal(thumbnalImg[i], { 
+      viewFactor: 1,
+      duration: 1000, 
+      easing: 'ease-out',
+      delay: `${300 * i}`,
+      origin: 'left', 
+      distance: '50px',
+      reset: true
+    });
+  }
   ScrollReveal().reveal('p.scr a', { 
     duration: 2000,
     delay: 1200,
@@ -40,7 +53,7 @@ $(function(){
     scale: 0.1,
     reset: true 
   });
-  ScrollReveal().reveal('.deco1', { 
+  ScrollReveal().reveal(`.deco1`, { 
     duration: 2000, 
     origin: 'top', 
     distance: '100%',
