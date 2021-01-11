@@ -40,9 +40,9 @@ $(function(){
       viewFactor: 1,
       duration: 1000, 
       easing: 'ease-out',
-      delay: `${300 * i}`,
-      origin: 'left', 
-      distance: '50px',
+      delay: `${500 * i}`,
+      opacity: 0,
+      scale: 0.1,
       reset: true
     });
   }

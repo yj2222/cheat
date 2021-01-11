@@ -215,6 +215,10 @@ ul.thumbnail li{
 }
 ul.thumbnail img{
   box-shadow: 3px 3px 5px #777;
+  transition: .5s;
+}
+ul.thumbnail img:hover{
+  box-shadow: 3px 3px 5px #000;
 }
 @media screen and (min-width: 500px) and (max-width: 767px){
   ul.thumbnail{
@@ -238,9 +242,6 @@ ul.thumbnail img{
   }
   ul.thumbnail li:not(:last-child){
     margin-right: 10px;
-  }
-  ul.thumbnail li:hover{
-    box-shadow: 3px 3px 5px #000;
   }
 } 
 /* JQuery Modal */
